@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.parrafoBlanco{
+background-color: black;
+display: flex;
+border:dashed 1px white;
+overflow: scroll;
+flex-direction: column;
+color:white;
+margin: 20px 10px;
+padding: 10px 10px;
+order: inherit;
+}
+section{
+    border: solid 1px white;
+}
+
+#arriba{
+background-color: black;
+color:white;
+font-family: fantasy,sans-serif;
+font-size: 30px;
+border: solid 1px white;
+}
+#abajo{
+    background-color: black;
+    color:white;
+    font-family: fantasy,sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+    border: solid 1px white;
+}
+.mapa{
+    display: inline;
+    margin: 40px 20px;
+    width: 400px;
+    height: 400px;
+    }
+    
+body{
+    background-color: black;
+}
+
+nav{
+    display: inline;
+    background-color: black;
+    list-style-type: none;
+    text-align: right;
+    margin: 10px 10px;
+}
+
+
+ul {
+    list-style-type: none;
+    font-style:normal;
+    text-decoration: none;
+    display: inline;
+    background-color: black;
+    text-align: right;
+    margin: 5px 5px;     
+}
+
+
+.fotologoheader{
+display:block;
+width: 600px;
+height: 250px;
+text-align: center;
+}
+.videomusica{
+    margin: 20px 20px;
+    width: 300px;
+    height: 300px; 
+}
+.tragotower{
+    display: inline;
+    margin: 20px 20px;
+    width: 300px;
+    height: 300px; 
+}
+.fotobarman{
+        display: inline;
+        margin: 20px 20px;
+        height: 300px;
+        width: 300px;
+    }
+.fotovereda{
+        display: inline;
+        margin: 20px 20px;
+        height: 300px;
+        width: 300px;
+    }
+.formulario{
+        color:white;
+    }
+label
+{
+        text-align: center;
+        color: white;
+        font-family: fantasy;
+        font-weight: 80;
+        font-size: medium;
+
+    }
