@@ -9,9 +9,6 @@
     }
 
 
-
-
-
     .tragotower{
     display: inline;
     margin: 20px 20px;
@@ -47,7 +44,7 @@
     .contenedortotal1{
         display: grid;
         grid-template-columns: 1fr 1fr; /*2 columnas*/
-        grid-template-rows: 0.20fr 0.25fr 0.25fr 0.20fr 0.20fr; /*4 filas*/
+        grid-template-rows: 0.20fr 0.25fr 0.25fr 0.20fr 0.20fr; /*5 filas*/
         grid-template-areas:
         "logo logo"
         "menu menu"
@@ -102,13 +99,18 @@
     
     .mapaindex{
         grid-area: mapa;
+        border: solid 10px white;
     } /*caja donde va mapa del local*/
 
     .mapa{
-    display: inline;
-    margin: 40px 20px;
-    width: 400px;
+    display: flex;
+    margin: 0px;
+    width: 655px;
     height: 400px;
+    justify-content: center;
+    
+    
+    ;
     } /* mapa del local*/
 
     .videitoprincipal{
@@ -117,31 +119,32 @@
     } /* caja donde va video del index*/
 
     .videomusica{
-    margin: 20px 20px;
-    width: 300px;
-    height: 300px; 
+    display: flex; 
+    margin: 0px;
+    width: 655px;
+    height: 400px;
+
     } /*video del index*/
 
     .parrafotexto{
         grid-area: parrafo;
-        width: 850px;
-        
+        width: 1350px;
+        border: solid 10px white;
     }
 
     .parrafoBlanco{
     background-color: grey;
     display: flex;
     border:dashed 5px white;
-    overflow: scroll;
     flex-direction: column;
     color:white;
     margin: 20px 10px;
     padding: 10px 10px;
     border: inherit;
+    text-align: left;
+    justify-content: left;
     
     }
-
-
 
 
     .abajo{
@@ -151,11 +154,14 @@
         font-family: fantasy,sans-serif;
         font-weight: lighter;
         font-size: 30px;
+        border: solid 10px white;
         /* caja del footer */
     }
     h3{
-        display: inline;
-    }
+        display: block;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
     .fotologoheaderabajo{   
         display: flex;
         background-color: black;
@@ -169,3 +175,128 @@
         justify-content: center;
         
     }
+
+
+    /*estructura grid ubicacion(entrega 2)*/
+
+    .contenedortotalubicacion{
+        display: grid;
+        grid-template-columns: 1fr; /*1 columna*/
+        grid-template-rows: 0.20fr 0.25fr 0.25fr 0.20fr 0.20fr; /*5 filas*/
+        background-color: black;
+        grid-template-areas:
+        "logo logo"
+        "menu menu"
+        "mapa mapa"
+        "parrafo parrafo"
+        "footer footer"
+        
+    }
+    .fotologoheaderubicacion{
+        grid-area: logo;
+        display: flex;
+        position: relative;
+        background-color: black;
+        top: 30px;
+        left: 350px;  
+        width: 550px;
+        height: 250px;
+        text-align: center;
+        justify-content: center;
+    } /* logo superior ocupa todo el ancho*/
+
+    .arribaubicacion{
+        grid-area: menu; 
+        background-color: black;
+        color:white;
+        font-family: fantasy,sans-serif;
+        font-size: 30px;
+        border: 6px white;
+
+    } /*header, menu principal*/
+
+    .carrouselprincipalubicacion{
+        display: inline;
+        background-color: black;
+        list-style-type: none;
+        text-align: center;
+        align-items: center;
+        margin: 10px 10px;
+        border: 6px white;
+    } /*si llego, hacerlo carrousel*/
+        
+    .ulheaderubicacion{
+        list-style-type: none;
+        font-style:normal;
+        background-color: black;
+        /*margin: 5px 5px;*/     
+    }
+
+    ul li{  
+        display: inline-block;
+        margin: 30px;
+    }
+    
+    .mapaindexubicacion{
+        grid-area: mapa;
+        border: solid 10px white;
+    } /*caja donde va mapa del local*/
+
+    .mapaubicacion{
+    display: flex;
+    margin: 0px;
+    width: 655px;
+    height: 400px;
+    justify-content: center;
+    
+    } /* mapa del local*/
+
+    .parrafotextoubicacion{
+        grid-area: parrafo;
+        width: 1350px;
+        border: solid 10px white;
+    }
+
+    .parrafoBlancoubicacion{
+    background-color: grey;
+    display: flex;
+    border:dashed 5px white;
+    flex-direction: column;
+    color:white;
+    margin: 20px 10px;
+    padding: 10px 10px;
+    border: inherit;
+    text-align: left;
+    justify-content: left;
+    
+    }
+
+    .abajoubicacion{
+        grid-area: footer;
+        background-color: black;
+        color:white;
+        font-family: fantasy,sans-serif;
+        font-weight: lighter;
+        font-size: 30px;
+        border: solid 10px white;
+        /* caja del footer */
+    }
+    h3{
+        display: block;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+    .fotologoheaderabajo{   
+        display: flex;
+        background-color: black;
+        top: 30px;
+        left: 250px;  
+        right: 550px;
+        width: 550px;
+        margin: 0px;
+        height: 250px;
+        text-align: center;
+        justify-content: center;
+        
+    }
+
