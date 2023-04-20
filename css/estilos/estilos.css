@@ -1,108 +1,171 @@
-*{
+    *{
     margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-
-.parrafoBlanco{
-background-color: black;
-display: flex;
-border:dashed 1px white;
-overflow: scroll;
-flex-direction: column;
-color:white;
-margin: 20px 10px;
-padding: 10px 10px;
-order: inherit;
-}
-section{
-    border: solid 1px white;
-}
-
-#arriba{
-background-color: black;
-color:white;
-font-family: fantasy,sans-serif;
-font-size: 30px;
-border: solid 1px white;
-}
-#abajo{
-    background-color: black;
-    color:white;
-    font-family: fantasy,sans-serif;
-    font-weight: lighter;
-    font-size: 30px;
-    border: solid 1px white;
-}
-.mapa{
-    display: inline;
-    margin: 40px 20px;
-    width: 400px;
-    height: 400px;
+    padding: 0;
+    box-sizing: border-box;
     }
-    
-body{
+  
+    body{
     background-color: black;
-}
-
-nav{
-    display: inline;
-    background-color: black;
-    list-style-type: none;
-    text-align: right;
-    margin: 10px 10px;
-}
+    }
 
 
-ul {
-    list-style-type: none;
-    font-style:normal;
-    text-decoration: none;
-    display: inline;
-    background-color: black;
-    text-align: right;
-    margin: 5px 5px;     
-}
 
 
-.fotologoheader{
-display:block;
-width: 600px;
-height: 250px;
-text-align: center;
-}
-.videomusica{
-    margin: 20px 20px;
-    width: 300px;
-    height: 300px; 
-}
-.tragotower{
+
+    .tragotower{
     display: inline;
     margin: 20px 20px;
     width: 300px;
     height: 300px; 
-}
-.fotobarman{
+    }
+    .fotobarman{
         display: inline;
         margin: 20px 20px;
         height: 300px;
         width: 300px;
     }
-.fotovereda{
+    .fotovereda{
         display: inline;
         margin: 20px 20px;
         height: 300px;
         width: 300px;
     }
-.formulario{
+    .formulario{
         color:white;
     }
-label
-{
+    label
+    {
         text-align: center;
         color: white;
         font-family: fantasy;
         font-weight: 80;
         font-size: medium;
+    }
 
+    /*estructura grid index(entrega 2)*/
+
+    .contenedortotal1{
+        display: grid;
+        grid-template-columns: 1fr 1fr; /*2 columnas*/
+        grid-template-rows: 0.20fr 0.25fr 0.25fr 0.20fr 0.20fr; /*4 filas*/
+        grid-template-areas:
+        "logo logo"
+        "menu menu"
+        "mapa videito"
+        "parrafo parrafo"
+        "footer footer"
+    }
+    .fotologoheader{
+        grid-area: logo;
+        display: flex;
+        position: relative;
+        background-color: black;
+        top: 30px;
+        left: 350px;  
+        width: 550px;
+        height: 250px;
+        text-align: center;
+        justify-content: center;
+    } /* logo superior ocupa todo el ancho*/
+
+    .arriba{
+        grid-area: menu; 
+        background-color: black;
+        color:white;
+        font-family: fantasy,sans-serif;
+        font-size: 30px;
+        border: 6px white;
+
+    } /*header, menu principal*/
+
+    nav{
+        display: inline;
+        background-color: black;
+        list-style-type: none;
+        text-align: center;
+        align-items: center;
+        margin: 10px 10px;
+        border: 6px white;
+    } /*si llego, hacerlo carrousel*/
+        
+    ul {
+        list-style-type: none;
+        font-style:normal;
+        background-color: black;
+        /*margin: 5px 5px;*/     
+    }
+
+    ul li{  
+        display: inline-block;
+        margin: 30px;
+    }
+    
+    .mapaindex{
+        grid-area: mapa;
+    } /*caja donde va mapa del local*/
+
+    .mapa{
+    display: inline;
+    margin: 40px 20px;
+    width: 400px;
+    height: 400px;
+    } /* mapa del local*/
+
+    .videitoprincipal{
+        grid-area: videito;
+        border: solid 10px white;
+    } /* caja donde va video del index*/
+
+    .videomusica{
+    margin: 20px 20px;
+    width: 300px;
+    height: 300px; 
+    } /*video del index*/
+
+    .parrafotexto{
+        grid-area: parrafo;
+        width: 850px;
+        
+    }
+
+    .parrafoBlanco{
+    background-color: grey;
+    display: flex;
+    border:dashed 5px white;
+    overflow: scroll;
+    flex-direction: column;
+    color:white;
+    margin: 20px 10px;
+    padding: 10px 10px;
+    border: inherit;
+    
+    }
+
+
+
+
+    .abajo{
+        grid-area: footer;
+        background-color: black;
+        color:white;
+        font-family: fantasy,sans-serif;
+        font-weight: lighter;
+        font-size: 30px;
+        /* caja del footer */
+    }
+    h3{
+        display: inline;
+    }
+    .fotologoheaderabajo{   
+        display: flex;
+        background-color: black;
+        top: 30px;
+        left: 250px;  
+        right: 550px;
+        width: 550px;
+        margin: 0px;
+        height: 250px;
+        text-align: center;
+        justify-content: center;
+        
     }
