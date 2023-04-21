@@ -43,7 +43,7 @@
 
     .contenedortotal1{
         display: grid;
-        grid-template-columns: 1fr 1fr; /*2 columnas*/
+        grid-template-columns: 0.5fr 0.5fr); /*2 columnas*/
         grid-template-rows: 0.20fr 0.25fr 0.25fr 0.20fr 0.20fr; /*5 filas*/
         grid-template-areas:
         "logo logo"
@@ -51,8 +51,23 @@
         "mapa videito"
         "parrafo parrafo"
         "footer footer"
+       
     }
-    .fotologoheader{
+    @media screen and (max-width: 500px){
+        .contenedortotal1{
+            background-color: violet;
+        }
+
+    }
+    .frente{
+        display: block;
+        background-image: url(../../multimedia/tuka\ logo\ horizontal.png);
+        grid-area: logo;
+        background-size: cover;
+        width: 400px;
+        height: 400px;
+    }
+    /*.fotologoheader{
         grid-area: logo;
         display: flex;
         position: relative;
@@ -63,7 +78,8 @@
         height: 250px;
         text-align: center;
         justify-content: center;
-    } /* logo superior ocupa todo el ancho*/
+    } */
+    /* logo superior ocupa todo el ancho*/
 
     .arriba{
         grid-area: menu; 
@@ -72,7 +88,7 @@
         font-family: fantasy,sans-serif;
         font-size: 30px;
         border: 6px white;
-
+        
     } /*header, menu principal*/
 
     nav{
@@ -103,14 +119,12 @@
     } /*caja donde va mapa del local*/
 
     .mapa{
-    display: flex;
     margin: 0px;
-    width: 655px;
+    width: 500px;
     height: 400px;
     justify-content: center;
     
     
-    ;
     } /* mapa del local*/
 
     .videitoprincipal{
@@ -121,7 +135,7 @@
     .videomusica{
     display: flex; 
     margin: 0px;
-    width: 655px;
+    width: 500px;
     height: 400px;
 
     } /*video del index*/
@@ -130,6 +144,9 @@
         grid-area: parrafo;
         width: 1350px;
         border: solid 10px white;
+    }
+    .parrafotexto:hover{
+        font-size: 25px;
     }
 
     .parrafoBlanco{
@@ -161,6 +178,11 @@
         display: block;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
+
+    .instagram:hover{
+        font-size: 25px;
+        color: yellow;
+    }
 
     .fotologoheaderabajo{   
         display: flex;
@@ -300,3 +322,6 @@
         
     }
 
+
+
+    /*<img src="multimedia/tuka logo horizontal.png" alt="logo tuka bar" title="logo tuka bar" class="fotologoheader"> */       
