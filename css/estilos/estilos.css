@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     }
-  
+
+    html{
+        font-size: 62.5%;
+    }
     body{
     background-color: black;
     }
@@ -43,7 +46,7 @@
 
     .contenedortotal1{
         display: grid;
-        grid-template-columns: 0.5fr 0.5fr); /*2 columnas*/
+        grid-template-columns: 0.5fr 0.5fr; /*2 columnas*/
         grid-template-rows: 0.20fr 0.25fr 0.25fr 0.20fr 0.20fr; /*5 filas*/
         grid-template-areas:
         "logo logo"
@@ -81,15 +84,16 @@
     } */
     /* logo superior ocupa todo el ancho*/
 
-    .arriba{
+    .menu{
         grid-area: menu; 
         background-color: black;
         color:white;
         font-family: fantasy,sans-serif;
-        font-size: 30px;
+        font-size: 25px;
         border: 6px white;
+
         
-    } /*header, menu principal*/
+    } /* menu principal*/
 
     nav{
         display: inline;
@@ -123,7 +127,6 @@
     width: 500px;
     height: 400px;
     justify-content: center;
-    
     
     } /* mapa del local*/
 
@@ -202,6 +205,7 @@
     /*estructura grid ubicacion(entrega 2)*/
 
     .contenedortotalubicacion{
+        box-sizing: content-box;
         display: grid;
         grid-template-columns: 1fr; /*1 columna*/
         grid-template-rows: 0.20fr 0.25fr 0.25fr 0.20fr 0.20fr; /*5 filas*/
@@ -275,7 +279,7 @@
 
     .parrafotextoubicacion{
         grid-area: parrafo;
-        width: 1350px;
+        box-sizing: content-box;
         border: solid 10px white;
     }
 
@@ -324,4 +328,4 @@
 
 
 
-    /*<img src="multimedia/tuka logo horizontal.png" alt="logo tuka bar" title="logo tuka bar" class="fotologoheader"> */       
+    
